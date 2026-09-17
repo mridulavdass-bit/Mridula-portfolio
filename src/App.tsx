@@ -1,5 +1,8 @@
+import { useState } from 'react'
+import SplashScreen from './components/SplashScreen'
 import Nav from './components/Nav'
 import Hud from './components/Hud'
+import SignatureIndicator from './components/SignatureIndicator'
 import Hero from './components/Hero'
 import Marquee from './components/Marquee'
 import WorkSection from './components/WorkSection'
@@ -12,10 +15,13 @@ import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
 
 function App() {
+  const [showSplash, setShowSplash] = useState(true)
+
   return (
     <>
       <Nav />
       <Hud />
+      <SignatureIndicator />
       <Hero />
       <Marquee />
       <WorkSection />
@@ -26,6 +32,7 @@ function App() {
       <ArchiveSection />
       <ContactSection />
       <Footer />
+      {showSplash && <SplashScreen onEnter={() => setShowSplash(false)} />}
     </>
   )
 }

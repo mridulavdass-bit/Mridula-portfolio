@@ -4,8 +4,8 @@ const cards = [
   { num: '01', label: 'Motion' },
   { num: '02', label: 'Illustration' },
   { num: '03', label: 'Brand' },
-  { num: '04', label: 'Web' },
-  { num: '05', label: 'AI Experiments', spark: true },
+  { num: '04', label: 'Video' },
+  { num: '05', label: 'AI-Assisted Exploration', spark: true },
   { num: '06', label: 'Creative Direction' },
 ]
 
@@ -24,7 +24,10 @@ export default function ExperimentsSection() {
               Stuff
             </h2>
           </div>
-          <p className="note">Smaller explorations, outside the main body of work.</p>
+          <p className="note">
+            Smaller explorations, outside the main body of work.
+            <span className="note-aside"> Not everything here needs a case study.</span>
+          </p>
         </div>
 
         <div className="exp-grid">

@@ -21,5 +21,5 @@ export function useReveal<T extends HTMLElement>() {
     return () => observer.disconnect()
   }, [])
 
-  return { ref, className: `reveal${visible ? ' is-visible' : ''}` }
+  return { ref, visible, className: `reveal${visible ? ' is-visible' : ''}` }
 }

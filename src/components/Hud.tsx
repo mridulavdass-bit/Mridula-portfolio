@@ -1,5 +1,11 @@
 import { useEffect, useState } from 'react'
 
+/**
+ * Total is derived at runtime from [data-hud] elements actually present
+ * in the page (Intro, Work, Expertise, Process, About, Experiments,
+ * Archive, Contact — the footer isn't counted, it isn't a "section" of
+ * content), so the displayed total can't drift from reality.
+ */
 export default function Hud() {
   const [section, setSection] = useState('Intro')
   const [folio, setFolio] = useState('01 / 08')

@@ -7,8 +7,8 @@ export default function AboutSection() {
   return (
     <section className="section section-pad container" id="about" data-hud="About">
       <div className="grid">
-        <span ref={eyebrow.ref} className={`label mono-label about-eyebrow ${eyebrow.className}`}>
-          05 / Note
+        <span ref={eyebrow.ref} className={`about-eyebrow ${eyebrow.className}`}>
+          A short note
         </span>
         <h2 ref={title.ref} className={`about-title ${title.className}`}>
           Different problems.
@@ -18,6 +18,7 @@ export default function AboutSection() {
         <p className="about-body">
           The work here moves across product, systems, brand, web, leadership and creative technology — different
           problems, tackled with the same underlying approach: understand the system before styling the surface.
+          <span className="about-body-aside"> Most of it started as a mess on a whiteboard.</span>
         </p>
       </div>
     </section>

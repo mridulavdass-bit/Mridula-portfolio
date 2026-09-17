@@ -2,9 +2,9 @@ export default function ContactSection() {
   return (
     <section className="section section-pad container contact" id="contact" data-hud="Contact">
       <div className="grid">
-        <span className="label mono-label about-eyebrow">08 / Close</span>
+        <span className="about-eyebrow">Worth a conversation</span>
         <h2 className="contact-title">
-          Have a good
+          Got a good
           <br />
           problem?
         </h2>

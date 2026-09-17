@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer id="site-footer" data-hud="End">
+    <footer id="site-footer">
       <div className="footer-grid">
         <div>
           <div className="footer-mark">Mridula Dass</div>
